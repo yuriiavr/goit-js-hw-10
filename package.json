@@ -1,21 +1,21 @@
 {
-  "name": "goit-js-hw-09",
+  "name": "goit-js-hw-10",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/yuriiavr/goit-js-hw-09/",
+  "homepage": "https://github.com/yuriiavr/goit-js-hw-10/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/yuriiavr/goit-js-hw-09"
+    "url": "git+https://https://github.com/yuriiavr/goit-js-hw-10"
   },
   "keywords": [],
   "author": "Yurii Avramets <yurii.avramets@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yuriiavr/goit-js-hw-09/issues"
+    "url": "https://github.com/yuriiavr/goit-js-hw-10/issues"
   },
   "dependencies": {
     "@vimeo/player": "^2.17.1",
