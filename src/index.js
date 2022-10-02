@@ -29,20 +29,19 @@ function onSearch(evt){
 }
 
 function renderCountries(countries) {
-    //Если в ответе бэкенд вернул больше чем 10 стран, в интерфейсе пояляется уведомление
+    // > 10 
     if (countries.length > 10) {
         countryList.innerHTML = '';
         countryDescription.innerHTML = '';
         return Notiflix.Notify.info("Too many matches found. Please enter a more specific name.");
     }
-    //Если бэкенд вернул от 2-х до 10-х стран, под тестовым полем отображается список найденных стран
+    // 2 - 10
     if (countries.length > 1  && countries.length < 10) {
         const markup = countries.map(({ name, flags }) => `<li style="font-size: 20px; display: flex; align-items: center; "><img style = "padding-right: 5px" src="${flags.svg}" width="40" /> ${name}</li>`).join('');
         countryList.innerHTML = markup;
         countryDescription.innerHTML = '';
     }
-    // Если результат запроса это массив с одной страной, в интерфейсе отображается разметка
-    //  карточки с данными о стране: флаг, название, столица, население и языки.
+    // 1 
     if (countries.length === 1) {
         const descriptionMarkup = countries.map(({ name, flags }) => {
             return `<li style="font-size: 30px; font-weight: 700; display: flex-end; align-items: center; margin-bottom: 10px">
